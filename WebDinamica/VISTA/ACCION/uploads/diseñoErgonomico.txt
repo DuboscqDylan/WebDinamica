@@ -1,0 +1,49 @@
+Objetivos: 
+
+Educar y concientizar sobre diseño ergonomico en accesibilidad, usabilidad, y bienestar del usuario.
+
+*-------------*
+
+1) Incomodidad conlleva a frustración, una de las mayores causas de abandono y percepción negativa de una pagina web.
+
+2) No todas las personas tienen las mismas capacidades físicas y cognitivas.
+
+*-------------*
+
+Accesibilidad:
+
+Gente con limitaciones físicas o cognitivas pueden encontrar barreras si el diseño no les tiene en consideración. Por ejemplo:
+
+Problemas de vista. Letras muy pequeñas, pantallas con blancos muy intensos. Se puede contrarrestar evitando esas características o considerando que la estructura de la pagina se mantenga bien al hacerle zoom / dando la opción de un modo oscuro respectivamente. 
+Si la página hace uso importante de colores para diferenciar elementos, deberíamos considerar usar colores que gente daltónica pueda distinguir bien, o crear una opción que altere los colores a una paleta apta para daltónicos.
+En caso de una persona ciega, se debe incluir texto alternativo, y asegurar que la pagina sea navegable con teclado. Así como dar extra atención a la jerarquía de los elementos para que su navegación sea intuitiva igualmente.
+
+Problemas motrices. Algunas personas no disponen de la capacidad usar un ratón, para este caso es importante asegurar que la página es navegable con teclado.
+También hay que tener en cuenta si el diseño es muy demandante para las manos en el caso de los smartphones (Como tener que llevar los dedos muy lejos de la posición natural de manera continua, por ejemplo).  
+
+Problemas cognitivos. Esto abarca una muy amplia variedad de situaciones, pero en terminos simples queremos evitar 'bombardear' con información al usuario; mantener la información simple, ordenada, y concisa; hacer que la interfaz responda de manera previsible; transmitir mensajes a medida de lo posible con imagenes, infografías, inclusión de símbolos.
+
+También tenemos que tener en cuenta la usabilidad para usuarios mayores y niños, si sabemos que son posibles usuarios de el sitio. La gente mayor muchas veces no es tan ágil tecnologicamente, por lo cual en casos de diseño de aplicaciones web para la realización de trámites (obras sociales, municipalidad, pago de servicios, etcetc) que hoy en día se ven obligados a usar, es importante dar instrucciones concisas, claras, guiar cada paso del proceso, dar mensajes evidentes tanto textuales como visuales, para facilitar el proceso.
+Y en el caso de niños, muchos sitios limitan funcionalidades o contenido que muestran para que sea adecuado a esta demográfica. Por ejemplo youtube no sólo muestra una selección reducida de videos, sino que no incluye el formato de shorts, que puede ser muy adictivo de por sí, y más aún para los más pequeños.
+
+*--------------*
+Los siguientes puntos contribuyen a una mejor experiencia de usuario:
+
+1) Consistencia. Cosas como la terminología usada, la secuencia de acciones que se pueden tomar, o cualquier peculiaridad de un sitio deben ser consistentes a lo largo de todas las instancias para que usuarios puedan entender rapidamente y reconocer facilmente a los elementos.
+
+2) Eficiencia. Una interfaz que reduce el tiempo que un usuario debe esperar para una acción X, está a su vez reduciendo posible estrés o frustraciones del usuario. Lo mismo si el usuario siente que una acción está tomando muchos mas pasos de lo esperado.
+
+3) Memoria. El usuario no debería tener que esforzarse para recordar información. Toda información pertinente debería estar a simple vista en la interfaz en cada momento dado.
+
+4) Espacio. La distribución de los elementos en la pantalla influye en la trayectoria que deben recorrer los ojos para buscar la información, así como cuanto hay que desplazarse con el mouse, o que tan facil de acceder es desde smartphones cuando se usan con una sola mano, por ejemplo. La cercanía entre elementos que suelen o se necesitan ser usados en conjunto también ayuda a un mejor flujo dentro de la interfaz.
+
+*---------------*
+
+Leyendo fuí dándome cuenta que no necesariamente hay que hacer implementaciones super rebuscadas para lo que es accesibilidad, sino que un buen diseño, que sea usable y cumpla con la ergonomía ya te deja como a 80% del camino a una página accesible para todos. Así que creo que podemos plantear la infografía por ese lado, mostrar como construir un diseño con accesibilidad nos lleva a tomar buenas decisiones de diseño para todos los usuarios. 
+
+
+Sería algo así:
+
+Para una interfaz dada, tenemos una gran variedad de usuarios, entre ellos gente con distintas capacidades fisicas y cognitivas. -----------------> Ejemplos (podemos enumerar o algunos específicos o hablar en general) ------------>
+Para eso tenemos que pensar en las limitaciones que esas personas se pueden encontrar, y ajustar nuestro diseño a ello -------------> Ejemplos de ajustes de accesibilidad (buen diseño ergonómico) ------------>
+Realizar esos ajustes nos lleva a una página más usable no solo para las personas con problemas de accesibilidad, sino para el usuario medio, dando como resultado una página más ergonomica que reduce la frustración / la fricción de los usuarios al interactuar con la página.

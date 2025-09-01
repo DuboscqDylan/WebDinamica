@@ -1,0 +1,13 @@
+<?php include_once("./VISTA/ESTRUCTURA/header.php") ?>
+
+<a href="./VISTA/TP1/EJ1/vistaNumero.php">TP 1-1 Numero positivo/negativo</a> <br>
+<a href="./VISTA/TP1/EJ2/vistaCursada.php">TP 1-2 Horas de cursada</a> <br>
+<a href="./VISTA/TP1/EJ3/vistaInfoPersonal.php">TP 1-3 Datos personales</a> <br>
+<a href="./VISTA/TP1/EJ7/vistaOperaciones.php">TP 1-7 Operación matematica</a> <br>
+<a href="./VISTA/TP1/EJ8/vistaCine.php">TP 1-8 Entradas de cine</a> <br>
+<a href="/WebDinamica/VISTA/TP2/EJ3/vistaLogin.php">TP 2-3 Login</a> <br>
+<a href="/WebDinamica/VISTA/TP2/EJ4/vistaCinema.php">TP 2-4 Cargar peliculas</a> <br>
+<a href="/WebDinamica/VISTA/TP3/EJ1/vistaSubirArchivo.php">TP 3-1 Subir un archivo</a> <br>
+<a href="/WebDinamica/VISTA/TP3/EJ2/vistaMostrarArchivo.php">TP 3-2 Mostrar un archivo en un textarea</a> <br>
+
+<?php include_once("./VISTA/ESTRUCTURA/footer.php") ?>
