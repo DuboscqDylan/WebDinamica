@@ -11,5 +11,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 </head>
 
-<body class="bg-light d-flex align-items-center justify-content-center vh-100">
-    <nav class="position-absolute top-0 start-0 p-3"><a href="/WebDinamica/" class="btn btn-link">INDEX</a></nav>
+<body class="bg-light d-flex align-items-center justify-content-center vh-100">    
+    <nav class="navbar navbar-dark bg-primary fixed-top shadow-sm">
+        <div class="container">
+            <a href="/WebDinamica/" class="navbar-brand fw-bold">INDEX</a>
+        </div>
+    </nav>
+
+    <div class="mt-5 pt-4">
