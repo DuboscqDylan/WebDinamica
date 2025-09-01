@@ -28,7 +28,7 @@ class controlCinema
                 if (!copy($tmpName, $destino)) {
                     $resultado = "La imagen no pudo sere cargado";
                 } else {
-                    $resultado = "<img src='" . $destino . "'/>";
+                    $resultado = "<img src='" . $destino . "' width='500' height='500'/>";
                 }
             }
         } else {

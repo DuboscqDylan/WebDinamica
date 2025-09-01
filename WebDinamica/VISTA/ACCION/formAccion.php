@@ -10,6 +10,7 @@ require_once(__DIR__ . "../../../CONTROL/TP2/EJ4/controlCinema.php");
 require_once(__DIR__ . "../../../CONTROL/TP3/EJ1/controlSubirArchivo.php");
 require_once(__DIR__ . "../../../CONTROL/TP3/EJ2/controlMostrarArchivo.php");
 
+
 if ($_POST || $_GET) {
 
     $accion = $_POST['accion'] ?? $_GET['accion'];
@@ -63,19 +64,11 @@ if ($_POST || $_GET) {
         case 'tp2e4':
             $control = new controlCinema();
             $resultado = $control->validarImagen();
-            echo "<h2>La pelicula introducida es:</h2><br>";
-            echo "<p><strong>Titulo: </strong>" . $_POST["titulo"] . "</p>";
-            echo "<p><strong>Actores: </strong>" . $_POST["actores"] . "</p>";
-            echo "<p><strong>Director: </strong>" . $_POST["director"] . "</p>";
-            echo "<p><strong>Guion: </strong>" . $_POST["guion"] . "</p>";
-            echo "<p><strong>Produccion: </strong>" . $_POST["produccion"] . "</p>";
-            echo "<p><strong>Año: </strong>" . $_POST["anio"] . "</p>";
-            echo "<p><strong>Nacionalidad: </strong>" . $_POST["nacionalidad"] . "</p>";
-            echo "<p><strong>Genero: </strong>" . $_POST["genero"] . "</p>";
-            echo "<p><strong>Duracion: </strong>" . $_POST["duracion"] . "</p>";
-            echo "<p><strong>Restricciones de edad: </strong>" . $_POST["restriccion"] . "</p>";
-            echo $resultado;
-            echo "<br> <a href=" . "/WebDinamica/VISTA/TP2/EJ4/vistaCinema.php>Volver a la pagina anterior</a>";
+            $pelicula = $_POST;
+            $pelicula['archivo'] = $resultado;
+            include_once("../../VISTA/ESTRUCTURA/header.php");
+            include_once ("../../VISTA/TP2/EJ4/vistaMostrarPelicula.php");
+            include_once("../../VISTA/ESTRUCTURA/footer.php");
             break;
 
         case 'tp3e1':
@@ -92,4 +85,5 @@ if ($_POST || $_GET) {
             echo "<br> <a href=" . "/WebDinamica/VISTA/TP3/EJ2/vistaMostrarArchivo.php>Volver a la pagina anterior</a>";
             break;
     }
+
 }
