@@ -55,7 +55,7 @@ $(document).ready(function () {
             errorProduccion.text("Este campo es obligatorio");
             event.preventDefault();
         } else {
-            errorProduccion("");
+            errorProduccion.text("");
         }
         if (anio.val() === '') {
             errorAnio.text("Este campo es obligatorio");
@@ -84,7 +84,7 @@ $(document).ready(function () {
         if (duracion.val() === '') {
             errorDuracion.text("Este campo es obligatorio");
             event.preventDefault();
-        } else if (duracion.val() > 3) {
+        } else if (parseInt(duracion.val()) > 999) {
             errorDuracion.text("Este numero es demasiado grande!.");
             event.preventDefault();
         } else {
