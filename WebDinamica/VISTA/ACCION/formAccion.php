@@ -1,5 +1,5 @@
 <?php
-
+include_once(__DIR__ . "../../ESTRUCTURA/header.php");
 require_once(__DIR__ . "../../../CONTROL/TP1/EJ1/controlNumero.php");
 require_once(__DIR__ . "../../../CONTROL/TP1/EJ2/controlCursada.php");
 require_once(__DIR__ . "../../../CONTROL/TP1/EJ3/controlInfoPersonal.php");
@@ -22,43 +22,43 @@ if ($_POST || $_GET) {
             $numero = $_GET['numero'];
             $resultado = $control->verificarNumero($numero);
             echo "<p>Resultado: " . $resultado . "</p>";
-            echo "<br> <a href=" . "../TP1/EJ1/vistaNumero.php>Volver a la pagina anterior</a>";
+            echo "<br> <a href=" . "../TP1/EJ1/vistaNumero.php class='btn btn-primary mt-3'>Volver a la pagina anterior</a>";
             break;
 
         case 'tp1e2':
             $control = new controlCursada();
             $cronograma = $_GET;
             $resultado = $control->calcularCargaHoraria($cronograma);
-            echo "<p>Cantidad de horas que se cursan por semana:" . $resultado . "</p>";
-            echo "<br> <a href=" . "../TP1/EJ2/vistaCursada.php>Volver a la pagina anterior</a>";
+            echo "<p>La carga horaria es de: " . $resultado . "hs</p>";
+            echo "<br> <a href=" . "../TP1/EJ2/vistaCursada.php class='btn btn-primary mt-3'>Volver a la pagina anterior</a>";
             break;
 
         case 'tp1e3':
             $control = new controlInfoPersonal();
             $resultado = $control->mostrarInfoPersonal($_GET);
             echo "<p>" . $resultado . "</p>";
-            echo "<br> <a href=" . "../TP1/EJ3/vistaInfoPersonal.php>Volver a la pagina anterior</a>";
+            echo "<br> <a href=" . "../TP1/EJ3/vistaInfoPersonal.php class='btn btn-primary mt-3'>Volver a la pagina anterior</a>";
             break;
 
         case 'tp1e7':
             $control = new controlOperaciones();
             $resultado = $control->operar($_GET);
             echo "<p>" . $resultado . "</p>";
-            echo "<br> <a href=" . "../TP1/EJ7/vistaOperaciones.php>Volver a la pagina anterior</a>";
+            echo "<br> <a href=" . "../TP1/EJ7/vistaOperaciones.php class='btn btn-primary mt-3'>Volver a la pagina anterior</a>";
             break;
 
         case 'tp1e8':
             $control = new controlCine();
             $resultado = $control->calcularPrecioEntrada($_GET);
             echo "<p>El precio de la entrada es: " . $resultado . "</p>";
-            echo "<br> <a href=" . "../TP1/EJ8/vistaCine.php>Volver a la pagina anterior</a>";
+            echo "<br> <a href=" . "../TP1/EJ8/vistaCine.php class='btn btn-primary mt-3'>Volver a la pagina anterior</a>";
             break;
 
         case 'tp2e3':
             $control = new controlLogin();
             $resultado = $control->validarUsuario(["username" => $_POST["username"], "password" => $_POST["password"]]);
             echo "<p>" . $resultado . "</p>";
-            echo "<br> <a href=" . "/WebDinamica/VISTA/TP2/EJ3/vistaLogin.php>Volver a la pagina anterior</a>";
+            echo "<br> <a href=" . "/WebDinamica/VISTA/TP2/EJ3/vistaLogin.php class='btn btn-primary mt-3'>Volver a la pagina anterior</a>";
             break;
 
         case 'tp2e4':
@@ -75,15 +75,17 @@ if ($_POST || $_GET) {
             $control = new controlSubirArchivo;
             $resultado = $control->validarSubida();
             echo $resultado;
-            echo "<br> <a href=" . "/WebDinamica/VISTA/TP3/EJ1/vistaSubirArchivo.php>Volver a la pagina anterior</a>";
+            echo "<br> <a href=" . "/WebDinamica/VISTA/TP3/EJ1/vistaSubirArchivo.php class='btn btn-primary mt-3'>Volver a la pagina anterior</a>";
             break;
 
         case 'tp3e2':
             $control = new controlMostrarArchivo();
             $resultado = $control->validarSubida();
             echo $resultado;
-            echo "<br> <a href=" . "/WebDinamica/VISTA/TP3/EJ2/vistaMostrarArchivo.php>Volver a la pagina anterior</a>";
+            echo "<br> <a href=" . "/WebDinamica/VISTA/TP3/EJ2/vistaMostrarArchivo.php class='btn btn-primary mt-3'>Volver a la pagina anterior</a>";
             break;
     }
 
 }
+
+include_once(__DIR__ . "../../ESTRUCTURA/footer.php");

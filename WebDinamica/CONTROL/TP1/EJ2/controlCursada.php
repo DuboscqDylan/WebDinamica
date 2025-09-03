@@ -19,6 +19,6 @@ class controlCursada
             $cargaHoraria = $cargaHoraria + $dia;
         }
 
-        return "La carga horaria es: " . $cargaHoraria . "hs";
+        return  $cargaHoraria ;
     }
 }

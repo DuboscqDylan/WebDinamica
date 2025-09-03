@@ -2,9 +2,9 @@
 
 <form id="formSubirArchivo" name="formSubirArchivo" method="post" action="../../ACCION/formAccion.php" enctype="multipart/form-data">
     <input type="hidden" id="accion" name="accion" value="tp3e1">
-    <label for="archivo">Subir archivo</label>
-    <input type="file" name="archivo" id="archivo">
-    <input type="submit" id="submit" name="submit" value="Enviar">
+    <label for="archivo" class="form-label">Subir archivo</label>
+    <input type="file" name="archivo" id="archivo" class="form-control"> <br>
+    <input type="submit" id="submit" name="submit" value="Enviar" class="btn btn-success">
 </form>
 
 
